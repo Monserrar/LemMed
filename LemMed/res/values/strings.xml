@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LemMed</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ajuda">Ajuda</string>
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="title_activity_sair">Sair</string>
+    <string name="title_activity_boas_vindas">Boas Vindas</string>
+    <string name="title_activity_medicacao">Medicação</string>
+    <string name="title_activity_paciente">Paciente</string>
+    <string name="title_activity_medicamento">Medicamentos</string>
+
+    <!--Página Ajuda-->
+    <string name="btAjuda_Sair">Ok</string>
+    
+       
+     <!--Página Boas Vindas-->
+    <string name="btBoasVindas_Ok">Ok</string>
+    
+     <!--Página Main-->  
+    <string name="btMain_Paciente">Paciente</string>
+    <string name="btMain_Medicamento">Medicação</string>
+    <string name="btMain_Medicacao">Medicação e Horários</string>
+    <string name="btMain_Ajuda">Ajuda?</string>
+    <string name="btMain_Sobre">Sobre</string>
+    <string name="btMain_Sair">Sair</string>
+
+    
+     <!--Página Medicação--> 
+    
+    
+     <!--Página Medicamento--> 
+     
+     
+     <!--Página Paciente--> 
+     
+     
+     <!--Página Sair--> 
+    <string name="lbSair_Titulo">Sair</string>
+    <string name="lbSair_Confirma">Você deseja sair da Aplicação?</string>
+    <string name="btSair_Ok">Ok</string>
+    <string name="btSair_Cancela">Cancela</string>
+     
+     <!--Página Sobre-->
+    <string name="lbSobre_TituloAc">Sobre</string>
+    <string name="lbSobre_APPNome">LemMed - Agendamento de Medicação</string>
+    <string name="lbSobre_Faculdade">FJN - Faculdade Joaquim Nabuco</string>
+    <string name="lbSobre_Cadeira">Tópicos Integradores II</string>    
+    <string name="lbSobre_Professor">Professor: </string>
+    <string name="lbSobre_Time">Time: </string>      
+    <string name="lbSobre_P1">Wagner Cintra </string>
+    <string name="lbSobre_P2">Aurivelto Neto</string>  
+    <string name="lbSobre_P3">Luciano Brasiliano</string>  
+    <string name="lbSobre_P4">Andréa Coelho</string>  
+
+    <string name="btSobre_Sair">Ok</string>
+
+     
+     
+     
+     
+</resources>
