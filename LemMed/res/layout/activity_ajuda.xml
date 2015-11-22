@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/widget40"
+    android:layout_width="wrap_content"
+    android:layout_height="18dp"
+    android:layout_x="22dp"
+    android:layout_y="17dp"
+    android:text="@string/Ajuda_lbSubTitulo" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="276dp"
+    android:layout_height="248dp"
+    android:layout_x="21dp"
+    android:layout_y="42dp"
+    android:text="@string/Ajuda_mtxDescricao" />
+
+<ImageView
+    android:id="@+id/widget75"
+    android:layout_width="83dp"
+    android:layout_height="90dp"
+    android:layout_x="118dp"
+    android:layout_y="286dp"
+    android:src="@drawable/logo_lemed" />
+
+<Button
+    android:id="@+id/Ajuda_btSair"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_x="101dp"
+    android:layout_y="383dp"
+    android:text="@string/Ajuda_btSair" />
+
+</AbsoluteLayout>

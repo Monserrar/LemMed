@@ -12,51 +12,57 @@
 	android:layout_y="220dp" />
 
 <Button
-    android:id="@+id/btPaciente"
+    android:id="@+id/Main_btPaciente"
     android:layout_width="112dp"
     android:layout_height="wrap_content"
     android:layout_x="102dp"
     android:layout_y="19dp"
-    android:text="@string/btMain_Paciente" />
+    android:onClick="botaoPaciente()"
+    android:text="@string/Main_btPaciente" />
 
 <Button
-    android:id="@+id/btMedicamentos"
+    android:id="@+id/Main_btRemedios"
     android:layout_width="147dp"
     android:layout_height="wrap_content"
     android:layout_x="87dp"
     android:layout_y="68dp"
-    android:text="@string/btMain_Medicamento" />
+    android:onClick="botaoRemedio()"
+    android:text="@string/Main_btRemedio" />
 
 <Button
-    android:id="@+id/btMedHora"
-    android:layout_width="211dp"
-    android:layout_height="49dp"
-    android:layout_x="63dp"
-    android:layout_y="118dp"
-    android:text="@string/btMain_Medicacao" />
-
-<Button
-    android:id="@+id/btAjuda"
+    android:id="@+id/Main_btAjuda"
     android:layout_width="80dp"
     android:layout_height="wrap_content"
     android:layout_x="121dp"
     android:layout_y="176dp"
-    android:text="@string/btMain_Ajuda" />
+    android:onClick="botaoAjuda()"
+    android:text="@string/Main_btAjuda" />
 
 <Button
-    android:id="@+id/btSobre"
+    android:id="@+id/Main_btSobre"
     android:layout_width="78dp"
     android:layout_height="wrap_content"
     android:layout_x="120dp"
     android:layout_y="225dp"
-    android:text="@string/btMain_Sobre" />
+    android:onClick="botaoSobre()"
+    android:text="@string/Main_btSobre" />
 
 <Button
-    android:id="@+id/btSair"
+    android:id="@+id/Main_btSair"
     android:layout_width="83dp"
     android:layout_height="wrap_content"
     android:layout_x="118dp"
     android:layout_y="277dp"
-    android:text="@string/btMain_Sair" />
+    android:onClick="botaoSair()"
+    android:text="@string/Main_btSair" />
+
+<Button
+    android:id="@+id/Main_btMedicacao"
+    android:layout_width="211dp"
+    android:layout_height="49dp"
+    android:layout_x="59dp"
+    android:layout_y="120dp"
+    android:onClick="botaoMedicacao()"
+    android:text="@string/Main_btMedicacao" />
 
 </AbsoluteLayout>

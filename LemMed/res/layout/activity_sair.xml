@@ -11,23 +11,23 @@
     android:layout_height="18dp"
     android:layout_x="145dp"
     android:layout_y="15dp"
-    android:text="@string/lbSair_Titulo" />
+    android:text="@string/Sair_lbTitulo" />
 
 <Button
-    android:id="@+id/btOk_Sair"
+    android:id="@+id/Sair_btOk"
     android:layout_width="120dp"
     android:layout_height="wrap_content"
     android:layout_x="174dp"
     android:layout_y="320dp"
-    android:text="@string/btSair_Ok" />
+    android:text="@string/Sair_btOk" />
 
 <Button
-    android:id="@+id/btCancela_Sair"
+    android:id="@+id/Sair_btCancela"
     android:layout_width="118dp"
     android:layout_height="wrap_content"
     android:layout_x="37dp"
     android:layout_y="320dp"
-    android:text="@string/btSair_Cancela" />
+    android:text="@string/Sair_btCancela" />
 
 <ImageView
     android:id="@+id/widget75"
@@ -43,7 +43,7 @@
     android:layout_height="wrap_content"
     android:layout_x="44dp"
     android:layout_y="288dp"
-    android:text="@string/lbSair_Confirma" />
+    android:text="@string/Sair_lbConfirma" />
 
 m
 </AbsoluteLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/widget40"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="12dp"
+    android:layout_y="11dp"
+    android:text="@string/Remedio_lbNomeRemedio"
+    android:textSize="12sp" />
+
+<TextView
+    android:id="@+id/widget41"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="11dp"
+    android:layout_y="75dp"
+    android:text="@string/Remedio_lbTipo"
+    android:textSize="12sp" />
+
+<TextView
+    android:id="@+id/widget44"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="10dp"
+    android:layout_y="136dp"
+    android:text="@string/Remedio_lbForma"
+    android:textSize="12sp" />
+
+<EditText
+    android:id="@+id/Remedio_edForma"
+    android:layout_width="140dp"
+    android:layout_height="36dp"
+    android:layout_x="9dp"
+    android:layout_y="159dp"
+    android:text="EditText"
+    android:textSize="12sp" />
+
+<Button
+    android:id="@+id/Remedio_btNovo"
+    android:layout_width="70dp"
+    android:layout_height="33dp"
+    android:layout_x="93dp"
+    android:layout_y="293dp"
+    android:text="@string/Remedio_btNovo"
+    android:textSize="14sp" />
+
+<Button
+    android:id="@+id/Remedio_btLoc"
+    android:layout_width="79dp"
+    android:layout_height="34dp"
+    android:layout_x="10dp"
+    android:layout_y="293dp"
+    android:text="@string/Remedio_btLocalizar"
+    android:textSize="14sp" />
+
+<Button
+    android:id="@+id/Remedio_btSalvar"
+    android:layout_width="71dp"
+    android:layout_height="34dp"
+    android:layout_x="167dp"
+    android:layout_y="292dp"
+    android:text="@string/Remedio_btSalvar"
+    android:textSize="14sp" />
+
+<Button
+    android:id="@+id/Remedio_btExcluir"
+    android:layout_width="68dp"
+    android:layout_height="34dp"
+    android:layout_x="244dp"
+    android:layout_y="293dp"
+    android:text="@string/Remedio_btExcluir"
+    android:textSize="14sp" />
+
+<EditText
+    android:id="@+id/Remedio_edtLocalizar"
+    android:layout_width="244dp"
+    android:layout_height="wrap_content"
+    android:layout_x="12dp"
+    android:layout_y="330dp"
+    android:text="EditText"
+    android:textSize="18sp" />
+
+<Button
+    android:id="@+id/Remedio_btOk"
+    android:layout_width="48dp"
+    android:layout_height="31dp"
+    android:layout_x="263dp"
+    android:layout_y="333dp"
+    android:text="@string/Remedio_btOk"
+    android:textSize="14sp" />
+
+<EditText
+    android:id="@+id/Remedio_edApresentacao"
+    android:layout_width="141dp"
+    android:layout_height="34dp"
+    android:layout_x="160dp"
+    android:layout_y="162dp"
+    android:text="EditText"
+    android:textSize="12sp" />
+
+<EditText
+    android:id="@+id/Remedio_edId"
+    android:layout_width="wrap_content"
+    android:layout_height="36dp"
+    android:layout_x="8dp"
+    android:layout_y="218dp"
+    android:text="EditText"
+    android:textSize="12sp" />
+
+<Button
+    android:id="@+id/Remedio_btSair"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_x="102dp"
+    android:layout_y="392dp"
+    android:text="@string/Remedio_btSair" />
+
+<EditText
+    android:id="@+id/Remedio_edNomeRemedio"
+    android:layout_width="297dp"
+    android:layout_height="37dp"
+    android:layout_x="5dp"
+    android:layout_y="26dp"
+    android:ems="10"
+    android:text="EditText"
+    android:textSize="12sp" />
+
+<TextView
+    android:id="@+id/widget47"
+    android:layout_width="146dp"
+    android:layout_height="wrap_content"
+    android:layout_x="160dp"
+    android:layout_y="136dp"
+    android:text="@string/Remedio_lbApresentacao"
+    android:textSize="12sp" />
+
+<TextView
+    android:id="@+id/widget49"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+    android:layout_x="14dp"
+    android:layout_y="198dp"
+    android:text="@string/Remedio_lbId"
+    android:textSize="12sp" />
+
+<EditText
+    android:id="@+id/Remedio_edTipo"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:layout_x="9dp"
+    android:layout_y="92dp"
+    android:ems="10"
+    android:text="EditText"
+    android:textSize="12sp" >
+
+    <requestFocus />
+</EditText>
+
+</AbsoluteLayout>

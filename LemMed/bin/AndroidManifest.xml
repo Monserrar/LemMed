@@ -30,6 +30,22 @@
             android:name=".SobreActivity"
             android:label="@string/title_activity_sobre" >
         </activity>
+        <activity
+            android:name=".AjudaActivity"
+            android:label="@string/title_activity_ajuda" >
+        </activity>
+        <activity
+            android:name=".PacienteActivity"
+            android:label="@string/title_activity_paciente" >
+        </activity>
+        <activity
+            android:name=".MedicacaoActivity"
+            android:label="@string/title_activity_medicacao" >
+        </activity>
+        <activity
+            android:name=".RemedioActivity"
+            android:label="@string/title_activity_remedio" >
+        </activity>
     </application>
 
 </manifest>

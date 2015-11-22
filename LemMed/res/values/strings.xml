@@ -10,55 +10,87 @@
     <string name="title_activity_boas_vindas">Boas Vindas</string>
     <string name="title_activity_medicacao">Medicação</string>
     <string name="title_activity_paciente">Paciente</string>
-    <string name="title_activity_medicamento">Medicamentos</string>
+    <string name="title_activity_remedio">Medicamentos</string>
 
-    <!--Página Ajuda-->
-    <string name="btAjuda_Sair">Ok</string>
-    
-       
-     <!--Página Boas Vindas-->
-    <string name="btBoasVindas_Ok">Ok</string>
-    
-     <!--Página Main-->  
-    <string name="btMain_Paciente">Paciente</string>
-    <string name="btMain_Medicamento">Medicação</string>
-    <string name="btMain_Medicacao">Medicação e Horários</string>
-    <string name="btMain_Ajuda">Ajuda?</string>
-    <string name="btMain_Sobre">Sobre</string>
-    <string name="btMain_Sair">Sair</string>
+    <!-- Página Ajuda -->
+    <string name="Ajuda_btSair">Ok</string>
+    <string name="Ajuda_lbSubTitulo">Aqui voçê encontra ajuda sobre o APP.</string>
+    <string name="Ajuda_mtxDescricao">Aqui teremos todos os textos de ajuda sobre o app, como logar, acessar e cadastrar os pacientes, medicamentos e horários para tomar a medicação.</string>
 
-    
-     <!--Página Medicação--> 
-    
-    
-     <!--Página Medicamento--> 
-     
-     
-     <!--Página Paciente--> 
-     
-     
-     <!--Página Sair--> 
-    <string name="lbSair_Titulo">Sair</string>
-    <string name="lbSair_Confirma">Você deseja sair da Aplicação?</string>
-    <string name="btSair_Ok">Ok</string>
-    <string name="btSair_Cancela">Cancela</string>
-     
-     <!--Página Sobre-->
-    <string name="lbSobre_TituloAc">Sobre</string>
-    <string name="lbSobre_APPNome">LemMed - Agendamento de Medicação</string>
-    <string name="lbSobre_Faculdade">FJN - Faculdade Joaquim Nabuco</string>
-    <string name="lbSobre_Cadeira">Tópicos Integradores II</string>    
-    <string name="lbSobre_Professor">Professor: </string>
-    <string name="lbSobre_Time">Time: </string>      
-    <string name="lbSobre_P1">Wagner Cintra </string>
-    <string name="lbSobre_P2">Aurivelto Neto</string>  
-    <string name="lbSobre_P3">Luciano Brasiliano</string>  
-    <string name="lbSobre_P4">Andréa Coelho</string>  
+    <!-- Página Boas Vindas -->
+    <string name="Boasvindas_btOk">Ok</string>
 
-    <string name="btSobre_Sair">Ok</string>
+    <!-- Página Main -->
+    <string name="Main_btPaciente">Paciente</string>
+    <string name="Main_btRemedio">Medicação</string>
+    <string name="Main_btMedicacao">Medicação e Horários</string>
+    <string name="Main_btAjuda">Ajuda?</string>
+    <string name="Main_btSobre">Sobre</string>
+    <string name="Main_btSair">Sair</string>
 
-     
-     
-     
-     
+    <!-- Página Medicação -->
+
+
+
+    <string name="Medicacao_edPesquisar">Nome do Medicamento a localizar</string>
+    <string name="Medicacao_btLocalizar">Localizar</string>
+    <string name="Medicacao_btNovo">Novo</string>
+    <string name="Medicacao_btSalvar">Salvar</string>
+    <string name="Medicacao_btExcluir">Excluir</string>
+    <string name="Medicacao_btOk">Ok</string>
+    <string name="Medicacao_btSair">Voltar</string>
+
+
+
+    <!-- Página Remedio (Medicamento) -->
+    <string name="Remedio_lbNomeRemedio">Nome do Remedio</string>
+    <string name="Remedio_lbTipo">Tipo (Antialérgico, Analgésico etc)</string>
+    <string name="Remedio_lbForma">Forma (Cápsula, líquido etc</string>
+    <string name="Remedio_lbApresentacao">Apresentação (Frasco, etc</string>
+    <string name="Remedio_lbId">Id Medicação</string>
+
+
+    <string name="Remedio_edPesquisar">Nome do Medicamento a localizar</string>
+    <string name="Remedio_btLocalizar">Localizar</string>
+    <string name="Remedio_btNovo">Novo</string>
+    <string name="Remedio_btSalvar">Salvar</string>
+    <string name="Remedio_btExcluir">Excluir</string>
+    <string name="Remedio_btOk">Ok</string>
+    <string name="Remedio_btSair">Voltar</string>
+
+
+
+
+    <!-- Página Paciente -->
+    <string name="Paciente_lbNomePaciente">Nome do Paciente</string>
+    <string name="Paciente_lbIdade">Idade</string>
+    <string name="Paciente_lbId">Id</string>
+    
+    <string name="Paciente_edPesquisar">Nome do Paciente</string>
+    <string name="Paciente_btLocalizar">Localizar</string>
+    <string name="Paciente_btNovo">Novo</string>
+    <string name="Paciente_btSalvar">Salvar</string>
+    <string name="Paciente_btExcluir">Excluir</string>
+    <string name="Paciente_btOk">Ok</string>
+    <string name="Paciente_btSair">Voltar</string>
+
+    <!-- Página Sair -->
+    <string name="Sair_lbTitulo">Sair</string>
+    <string name="Sair_lbConfirma">Você deseja sair da Aplicação?</string>
+    <string name="Sair_btOk">Ok</string>
+    <string name="Sair_btCancela">Cancela</string>
+
+    <!-- Página Sobre -->
+    <string name="Sobre_lbAPPNome">LemMed - Agendamento de Medicação</string>
+    <string name="Sobre_lbFaculdade">FJN - Faculdade Joaquim Nabuco</string>
+    <string name="Sobre_lbCadeira">Tópicos Integradores II</string>
+    <string name="Sobre_lbProfessor">Professor: </string>
+    <string name="Sobre_lbTime">Time: </string>
+    <string name="Sobre_lbP1">Wagner Cintra </string>
+    <string name="Sobre_lbP2">Aurivelto Neto</string>
+    <string name="Sobre_lbP3">Luciano Brasiliano</string>
+    <string name="Sobre_lbP4">Andréa Coelho</string>
+    <string name="Sobre_btSair">Ok</string>
+    <string name="Sobre_titleRemedio">Remedio</string>
+
 </resources>
