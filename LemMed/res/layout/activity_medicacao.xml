@@ -1,184 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout
-	android:id="@+id/widget0"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	xmlns:android="http://schemas.android.com/apk/res/android">
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-<TextView
-    android:id="@+id/widget40"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_x="10dp"
-    android:layout_y="10dp"
-    android:text="@string/Paciente_lbNomePaciente" />
+    <TextView
+        android:id="@+id/widget40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="10dp"
+        android:text="@string/Paciente_lbNomePaciente" />
 
-<TextView
-    android:id="@+id/widget41"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_x="11dp"
-    android:layout_y="75dp"
-    android:text="@string/Remedio_lbNomeRemedio" />
+    <TextView
+        android:id="@+id/widget41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="75dp"
+        android:text="@string/Remedio_lbNomeRemedio" />
 
-<TextView
-	android:id="@+id/widget44"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Data Inicial:"
-	android:layout_x="10dp"
-	android:layout_y="136dp" />
+    <TextView
+        android:id="@+id/widget44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="136dp"
+        android:text="@string/Medicacao_lbDataInicial" />
 
-<EditText
-    android:id="@+id/Medicacao_edDataIni"
-    android:layout_width="94dp"
-    android:layout_height="36dp"
-    android:layout_x="9dp"
-    android:layout_y="159dp"
-    android:text="EditText"
-    android:textSize="12sp" />
+    <TextView
+        android:id="@+id/widget47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="111dp"
+        android:layout_y="137dp"
+        android:text="@string/Medicacao_edDataFinal" />
 
-<Button
-    android:id="@+id/Medicacao_btNovo"
-    android:layout_width="70dp"
-    android:layout_height="33dp"
-    android:layout_x="92dp"
-    android:layout_y="293dp"
-    android:text="@string/Medicacao_btNovo"
-    android:textSize="14sp" />
+    <TextView
+        android:id="@+id/widget53"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_x="211dp"
+        android:layout_y="138dp"
+        android:text="@string/Medicacao_edHoraInicial" />
 
-<Button
-    android:id="@+id/Medicacao_btLoc"
-    android:layout_width="79dp"
-    android:layout_height="34dp"
-    android:layout_x="10dp"
-    android:layout_y="293dp"
-    android:text="@string/Medicacao_btLocalizar"
-    android:textSize="14sp" />
+    <Button
+        android:id="@+id/Medicacao_btSair"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_x="102dp"
+        android:layout_y="396dp"
+        android:text="@string/Medicacao_btSair" />
 
-<Button
-    android:id="@+id/Medicacao_btSalvar"
-    android:layout_width="71dp"
-    android:layout_height="34dp"
-    android:layout_x="167dp"
-    android:layout_y="292dp"
-    android:text="@string/Medicacao_btSalvar"
-    android:textSize="14sp" />
+    <Button
+        android:id="@+id/Medicacao_btOk"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_x="262dp"
+        android:layout_y="372dp"
+        android:text="@string/Medicacao_btOk"
+        android:textSize="14sp" />
 
-<Button
-    android:id="@+id/Medicacao_btExcluir"
-    android:layout_width="68dp"
-    android:layout_height="34dp"
-    android:layout_x="244dp"
-    android:layout_y="293dp"
-    android:text="@string/Medicacao_btExcluir"
-    android:textSize="14sp" />
+    <Button
+        android:id="@+id/Medicacao_btNovo"
+        android:layout_width="70dp"
+        android:layout_height="33dp"
+        android:layout_x="94dp"
+        android:layout_y="331dp"
+        android:text="@string/Medicacao_btNovo"
+        android:textSize="14sp" />
 
-<EditText
-	android:id="@+id/edtLocalizar_Medicacao"
-	android:layout_width="244dp"
-	android:layout_height="wrap_content"
-	android:text="EditText"
-	android:textSize="18sp"
-	android:layout_x="12dp"
-	android:layout_y="330dp" />
+    <Button
+        android:id="@+id/Medicacao_btLoc"
+        android:layout_width="79dp"
+        android:layout_height="34dp"
+        android:layout_x="12dp"
+        android:layout_y="331dp"
+        android:text="@string/Medicacao_btLocalizar"
+        android:textSize="14sp" />
 
-<Button
-    android:id="@+id/Medicacao_btOk"
-    android:layout_width="48dp"
-    android:layout_height="31dp"
-    android:layout_x="263dp"
-    android:layout_y="333dp"
-    android:text="@string/Medicacao_btOk"
-    android:textSize="14sp" />
+    <Button
+        android:id="@+id/Medicacao_btSalvar"
+        android:layout_width="71dp"
+        android:layout_height="34dp"
+        android:layout_x="168dp"
+        android:layout_y="330dp"
+        android:text="@string/Medicacao_btSalvar"
+        android:textSize="14sp" />
 
-<Button
-    android:id="@+id/Medicacao_btSair"
-    android:layout_width="120dp"
-    android:layout_height="wrap_content"
-    android:layout_x="105dp"
-    android:layout_y="382dp"
-    android:text="@string/Medicacao_btSair" />
+    <Button
+        android:id="@+id/Medicacao_btExcluir"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_x="246dp"
+        android:layout_y="331dp"
+        android:text="@string/Medicacao_btExcluir"
+        android:textSize="14sp" />
 
-<EditText
-    android:id="@+id/Medicacao_edDataFim"
-    android:layout_width="92dp"
-    android:layout_height="34dp"
-    android:layout_x="108dp"
-    android:layout_y="159dp"
-    android:text="EditText"
-    android:textSize="12sp" />
+    <EditText
+        android:id="@+id/Medicacao_edNomePaciente"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="28dp"
+        android:ems="10" >
 
-<TextView
-	android:id="@+id/widget47"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Data Final:"
-	android:layout_x="111dp"
-	android:layout_y="137dp" />
+        <requestFocus />
+    </EditText>
 
-<EditText
-    android:id="@+id/Medicacao_edIdMedicacao"
-    android:layout_width="wrap_content"
-    android:layout_height="36dp"
-    android:layout_x="11dp"
-    android:layout_y="248dp"
-    android:text="EditText"
-    android:textSize="12sp" />
+    <EditText
+        android:id="@+id/Medicacao_edNomeRemedio"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="94dp"
+        android:ems="10" />
 
-<TextView
-	android:id="@+id/widget49"
-	android:layout_width="wrap_content"
-	android:layout_height="23dp"
-	android:text="Id Medica&#231;&#227;o:"
-	android:layout_x="10dp"
-	android:layout_y="223dp" />
+    <EditText
+        android:id="@+id/Medicacao_edDataInicial"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="156dp"
+        android:ems="10" />
 
-<Spinner
-    android:id="@+id/Medicacao_spNomePaciente"
-    android:layout_width="295dp"
-    android:layout_height="36dp"
-    android:layout_x="12dp"
-    android:layout_y="34dp" />
+    <EditText
+        android:id="@+id/Medicacao_edDataFinal"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_x="101dp"
+        android:layout_y="156dp"
+        android:ems="10" />
 
-<Spinner
-    android:id="@+id/Medicacao_spNomeMedicamento"
-    android:layout_width="296dp"
-    android:layout_height="37dp"
-    android:layout_x="11dp"
-    android:layout_y="98dp" />
+    <EditText
+        android:id="@+id/Medicacao_edHoraInicial"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="157dp"
+        android:ems="10" />
 
-<EditText
-    android:id="@+id/Medicacao_edHoraIni"
-    android:layout_width="72dp"
-    android:layout_height="35dp"
-    android:layout_x="212dp"
-    android:layout_y="157dp"
-    android:text="EditText"
-    android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="200dp"
+        android:text="@string/Medicacao_lbHoraFinal" />
 
-<TextView
-	android:id="@+id/widget53"
-	android:layout_width="wrap_content"
-	android:layout_height="22dp"
-	android:text="Hora Inicial:"
-	android:layout_x="211dp"
-	android:layout_y="138dp" />
+    <EditText
+        android:id="@+id/Medicacao_edHoraFinal"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="222dp"
+        android:ems="10" />
 
-<EditText
-    android:id="@+id/Medicacao_edHoraInterval"
-    android:layout_width="72dp"
-    android:layout_height="35dp"
-    android:layout_x="211dp"
-    android:layout_y="194dp"
-    android:text="EditText"
-    android:textSize="12sp" />
+    <TextView
+        android:id="@+id/widget55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="109dp"
+        android:layout_y="205dp"
+        android:text="@string/Medicacao_lbHoraIntervalo" />
 
-<TextView
-	android:id="@+id/widget55"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Intervalo em Horas:"
-	android:layout_x="70dp"
-	android:layout_y="199dp" />
+    <EditText
+        android:id="@+id/Medicacao_edHoraIntervalo"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="223dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Medicacao_edIdMedicacao"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="290dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/widget49"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_x="13dp"
+        android:layout_y="264dp"
+        android:text="@string/Medicacao_edIdMedicacao" />
+
+    <EditText
+        android:id="@+id/edtLocalizar_Medicacao"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="368dp"
+        android:ems="10"
+        android:text="EditText"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Medicacao_btRetroceder"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_x="180dp"
+        android:layout_y="292dp"
+        android:text="@string/Medicacao_btRetroceder"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Medicacao_btAvancar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_x="250dp"
+        android:layout_y="292dp"
+        android:text="@string/Medicacao_btAvancar"
+        android:textSize="12sp" />
+
 </AbsoluteLayout>

@@ -13,12 +13,12 @@
     <string name="title_activity_remedio">Medicamentos</string>
 
     <!-- Página Ajuda -->
-    <string name="Ajuda_btSair">Ok</string>
+    <string name="Ajuda_btSair">OK</string>
     <string name="Ajuda_lbSubTitulo">Aqui voçê encontra ajuda sobre o APP.</string>
     <string name="Ajuda_mtxDescricao">Aqui teremos todos os textos de ajuda sobre o app, como logar, acessar e cadastrar os pacientes, medicamentos e horários para tomar a medicação.</string>
 
     <!-- Página Boas Vindas -->
-    <string name="Boasvindas_btOk">Ok</string>
+    <string name="Boasvindas_btOk">OK</string>
 
     <!-- Página Main -->
     <string name="Main_btPaciente">Paciente</string>
@@ -29,17 +29,32 @@
     <string name="Main_btSair">Sair</string>
 
     <!-- Página Medicação -->
-
-
+	<string name="Medicacao_lbDataInicial">Data Inicial</string>
+	<string name="Medicacao_lbDataFinal">Data Final</string>
+	<string name="Medicacao_lbHoraInicial">Hora Inicial</string>
+	<string name="Medicacao_lbHoraFinal">Hora Final</string>
+	<string name="Medicacao_lbHoraIntervalo">Intervalo de Hora</string>
+	<string name="Medicacao_lbIdMedicacao">Id da Medicação</string>
+	
+	<string name="Medicacao_edDataInicial">Data Inicial</string>
+	<string name="Medicacao_edDataFinal">Data Final</string>
+	<string name="Medicacao_edHoraInicial">Hora Inicial</string>
+	<string name="Medicacao_edHoraFinal">Hora Final</string>
+	<string name="Medicacao_edHoraIntervalo">Intervalo de Hora</string>
+	<string name="Medicacao_edIdMedicacao">Id da Medicação</string>	
+	
+	
+				
 
     <string name="Medicacao_edPesquisar">Nome do Medicamento a localizar</string>
     <string name="Medicacao_btLocalizar">Localizar</string>
     <string name="Medicacao_btNovo">Novo</string>
     <string name="Medicacao_btSalvar">Salvar</string>
     <string name="Medicacao_btExcluir">Excluir</string>
-    <string name="Medicacao_btOk">Ok</string>
+    <string name="Medicacao_btOk">OK</string>
     <string name="Medicacao_btSair">Voltar</string>
-
+    <string name="Medicacao_btAvancar"></string>
+    <string name="Medicacao_btRetroceder"></string>
 
 
     <!-- Página Remedio (Medicamento) -->

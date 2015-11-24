@@ -50,12 +50,16 @@ public class MainActivity extends Activity {
 	
 	//Criando as Variáveis que irão armazenar o conteúdo da tela de cadatro
 	//na Tabela Paciente
-	EditText edNomePaciente, edIdadePaciente, edLocalizarPaciente;
+	EditText edNomePaciente, edIdadePaciente, edLocalizarPaciente, edIdPaciente;
 	
 	//Criando as Variáveis que irão armazenar o conteúdo da tela de cadatro
 	//na Tabela Remédio
-	EditText edNomeRemedio, edTipoRemedio,edFormaRemedio,edApresentacaoRemedio, edLocalizarRemedio;
+	EditText edNomeRemedio, edTipoRemedio,edFormaRemedio,edApresentacaoRemedio, edLocalizarRemedio, edIdRemedio;
 
+	//Criando as Variáveis que irão armazenar o conteúdo da tela de cadatro
+		//na Tabela Medicacao
+		EditText Med_edNomeRemedio, Med_edNomePaciente, Med_edDataInicial, Med_edDataFinal, Med_edHoraInicial, Med_edHoraFinal, Med_edHoraIntervalo, Med_edLocaliza, Med_edIdMedicacao, Med_edHoraUltima;
+	
 	
 	//Usar na Listagem
 	TextView txtCodigo, txtDestino, txtTotalViagem;
@@ -227,18 +231,28 @@ public class MainActivity extends Activity {
 	public void CarregarMedicacaoActivit(){
 		try{		
 		setContentView(R.layout.activity_medicacao);
+		//EditText
+		EditText Medicacao_edNomePaciente = (EditText)findViewById(R.id.Medicacao_edNomePaciente);
+		EditText Medicacao_edNomeRemedio = (EditText)findViewById(R.id.Medicacao_edNomeRemedio);
+		EditText Medicacao_edDataInicial = (EditText)findViewById(R.id.Medicacao_edDataInicial);
+		EditText Medicacao_edDataFinal = (EditText)findViewById(R.id.Medicacao_edDataFinal);
+		EditText Medicacao_edHoraInicial = (EditText)findViewById(R.id.Medicacao_edHoraInicial);
+		EditText Medicacao_edHoraFinal = (EditText)findViewById(R.id.Medicacao_edHoraFinal);
+		EditText Medicacao_edHoraIntervalo = (EditText)findViewById(R.id.Medicacao_edHoraIntervalo);
 		
 		
 		
 		
 		//Botoes
+		
 		Button Medicacao_btLocalizar = (Button) findViewById(R.id.Medicacao_btLoc);
 		Button Medicacao_btNovo = (Button) findViewById(R.id.Medicacao_btNovo);
 		Button Medicacao_btSalvar = (Button) findViewById(R.id.Medicacao_btSalvar);
 		Button Medicacao_btExcluir = (Button) findViewById(R.id.Medicacao_btExcluir);
 		Button Medicacao_btOk = (Button) findViewById(R.id.Medicacao_btOk);
 		Button Medicacao_btSair = (Button) findViewById(R.id.Medicacao_btSair);
-		
+		Button Medicacao_btAvancar = (Button) findViewById(R.id.Medicacao_btAvancar);
+		Button Medicacao_btRetroceder = (Button) findViewById(R.id.Medicacao_btRetroceder);		
 		
 		
 		}catch (Exception e){
@@ -292,6 +306,23 @@ public class MainActivity extends Activity {
 			  showMessage(e.toString(),"Erro ao Criar a Tabela Remedios");
 		   }
 		
+		try{
+			//Criar a Entidade de Medicacao
+		    bancoDados.execSQL("CREATE TABLE IF NOT EXISTS Tbl_Medicacao"+
+							"( IdMedicacao INTEGER PRIMARY KEY AUTOINCREMENT, "+
+							" NomePaciente char(30 NOT NULL,"+
+							" NomeRemedio char(30 NOT NULL,"+
+							" DataInicial char(10 NOT NULL,"+
+							" DataFinal char(10 NOT NULL,"+
+							" HoraInicial char(5 NOT NULL,"+
+							" HoraFinal char(5 NOT NULL,"+
+							" HoraIntervalo int NOT NULL,"+
+							" HoraUltima char(5) );");
+
+		   }catch (Exception e){
+			  showMessage(e.toString(),"Erro ao Criar a Tabela Medicacao");
+		   }
+		
 		
 	}
 	
@@ -301,7 +332,7 @@ public class MainActivity extends Activity {
 //Entidade Pacientes
 	public void limpaCampos_Paciente(){
 	
-
+		 
 	
 	}
 	
@@ -338,8 +369,24 @@ public class MainActivity extends Activity {
 }
 
 	public void excluirPaciente(View v){
-	
-	}
+
+			try{
+
+				edIdPaciente		= (EditText) findViewById(R.id.Paciente_edIdPaciente);
+				
+				
+			bancoDados.execSQL("DELETE FROM tbl_Paciente WHERE "+
+								 "Id=" +Integer.valueOf(edIdPaciente.getText().toString()));
+								 
+								 //Exibe a messagem que excluir com Sucesso
+								 showMessageConfirma("LemMed - Registro Excluido com Sucesso.");
+								 
+								 }catch (Exception e){
+								 showMessage("Erro ao Ecluir Registro","Erro");
+								 showMessage(e.toString(),"erro");
+								 
+				}//Fecha Catche
+	}//Fecha excluirPaciente
 
 	public void localizarPaciente(View v){
 		
@@ -384,6 +431,107 @@ public class MainActivity extends Activity {
 		}//fecha o catch	
 		
 	}
+	
+	public void editarRemedio(View v){
+		
+	}
+	
+	public void excluirRemedio(View v){
+	
+		try{
+
+			edIdRemedio		= (EditText) findViewById(R.id.Remedio_edId);
+			
+			
+		bancoDados.execSQL("DELETE FROM tbl_Remedio WHERE "+
+							 "Id=" +Integer.valueOf(edIdRemedio.getText().toString()));
+							 
+							 //Exibe a messagem que excluir com Sucesso
+							 showMessageConfirma("LemMed - Registro Excluido com Sucesso.");
+							 
+							 }catch (Exception e){
+							 showMessage("Erro ao Ecluir Registro","Erro");
+							 showMessage(e.toString(),"erro");
+							 
+			}//Fecha Catche
+}//Fecha excluirRemedio
+	
+	public void localizarRemedio(View v){
+		
+		
+	}
+	
+//Entidade Medicacao
+	public void limparCampos_Medicacao(){
+		
+		
+	}
+
+	public void cadastrarMedicacao(View v){
+		
+		try{
+			
+			Med_edNomePaciente =(EditText) findViewById(R.id.Medicacao_edNomePaciente);			
+			Med_edNomeRemedio =(EditText) findViewById(R.id.Medicacao_edNomeRemedio);
+
+			Med_edDataInicial =(EditText) findViewById(R.id.Medicacao_edDataInicial);
+			Med_edDataFinal =(EditText) findViewById(R.id.Medicacao_edDataFinal);
+			Med_edHoraInicial =(EditText) findViewById(R.id.Medicacao_edHoraInicial);
+			Med_edHoraFinal =(EditText) findViewById(R.id.Medicacao_edHoraFinal);
+		
+			
+			//executa a SQL de insert na Entidade tbl_Pacientes			
+			bancoDados.execSQL("INSERT INTO tbl_Remedios (NomeRemedio,TipoRemedio,FormaRemedio,ApresentacaoRemedio)"+
+					   " VALUES('"+edNomeRemedio.getText().toString()				 +
+					   "','"+ edTipoRemedio.getText().toString() 					 +
+					   "','"+ edFormaRemedio.getText().toString() 					 +
+					   "','"+ edApresentacaoRemedio.getText().toString() 			 +
+					   "')");
+				
+			//Exibe a mensagem que Cadastrou com sucesso
+			showMessageConfirma("LemMed - Cadastro realizado com sucesso.");
+				
+			//Limpa TODOS os campos
+			limpaCampos_Paciente();
+				
+		}catch	(Exception e){
+			showMessage("Erro ao cadastrar Remédio","Erro");
+			showMessage(e.toString(),"Erro");
+			 
+		}//fecha o catch	
+		
+	}
+	
+	public void editarMedicacao(View v){
+		
+	}
+	
+	public void excluirMedicacao(View v){
+	
+		try{
+
+			edIdRemedio		= (EditText) findViewById(R.id.Remedio_edId);
+			
+			
+		bancoDados.execSQL("DELETE FROM tbl_Remedio WHERE "+
+							 "Id=" +Integer.valueOf(edIdRemedio.getText().toString()));
+							 
+							 //Exibe a messagem que excluir com Sucesso
+							 showMessageConfirma("LemMed - Registro Excluido com Sucesso.");
+							 
+							 }catch (Exception e){
+							 showMessage("Erro ao Ecluir Registro","Erro");
+							 showMessage(e.toString(),"erro");
+							 
+			}//Fecha Catche
+}//Fecha excluirRemedio
+	
+	public void localizarMedicacao(View v){
+		
+		
+	}
+	
+	
 	
 	
 /************************ Navegação entre Activits *****************************/	
